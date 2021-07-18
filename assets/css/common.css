@@ -1,37 +1,41 @@
 @font-face {
-	font-family: "CascadiaMono";
-	src:  url("CascadiaMono.ttf");
+    font-family: "CascadiaMono";
+    src: url("CascadiaMono.ttf");
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: 'CascadiaMono';
-	background-color: #252627;
+    margin: 0;
+    padding: 0;
+    font-family: 'CascadiaMono';
+    background-color: #252627;
 }
-	
+
 .main {
-	padding: 20px;
-	color: #a9a9b3;
+    padding: 20px;
+    color: #a9a9b3;
 }
 
 .result {
-	padding-left: 20px;
-	width: 700px;
+    padding-left: 20px;
+    width: 700px;
 }
+
 .result p {
-	margin: 0;
+    margin: 0;
 }
+
 .result a {
-	color: #00a8ff;
+    color: #00a8ff;
 }
-	
+
 .yellow {
-	color: #ffd93b;
+    color: #ffd93b;
 }
+
 .green {
-	color: #2ecc71;
+    color: #2ecc71;
 }
+
 .red {
-	color: #ee4b5b;
+    color: #ee4b5b;
 }

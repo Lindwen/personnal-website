@@ -7,12 +7,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'CascadiaMono';
-    background-color: #252627;
+    background-color: #0c162d;
 }
 
 .main {
     padding: 20px;
-    color: #a9a9b3;
+}
+
+.command {
+    color: #fff;
 }
 
 .result {
@@ -22,6 +25,7 @@ body {
 
 .result p {
     margin: 0;
+    color: #627597;
 }
 
 .result a {
@@ -29,13 +33,59 @@ body {
 }
 
 .yellow {
-    color: #ffd93b;
+    color: #ea4aaa;
+    font-weight: 600;
+    animation: pulsate 2.5s infinite alternate;   
+    text-shadow:
+    0 0 7px #ea4aaa,
+    0 0 10px #ea4aaa,
+    0 0 21px #ea4aaa,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #ea4aaa,
+      0 0 11px #ea4aaa,
+      0 0 19px #ea4aaa,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 2px #ea4aaa,
+      0 0 4px #ea4aaa,
+      0 0 6px #ea4aaa,
+      0 0 10px #f09,
+      0 0 45px #f09,
+      0 0 55px #f09,
+      0 0 70px #f09,
+      0 0 80px #f09;
+  }
 }
 
 .green {
-    color: #2ecc71;
+    color: #00cfc8;
 }
 
 .red {
     color: #ee4b5b;
+}
+
+a{
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(46, 105, 255) 0%, rgb(29, 93, 255) 24%, rgb(91, 157, 255) 55.73%, rgb(255, 116, 241) 75%, rgb(255, 116, 241) 100%) repeat scroll 0% 0% padding-box text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(12, 80, 255);
+    text-decoration: none;
 }

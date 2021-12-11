@@ -21,51 +21,48 @@
  |______|_|_| |_|\__,_| \_/\_/ \___|_| |_|
         </pre>
 
-        <p class="command"><span class="green">lindwen@deb-vps~$</span> neofetch</p>
+        <p class="command"><span class="green">lindwen@deb:~$</span> whoami</p>
         <div class="result">
-            <p><span class="red">Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;Alexander</p>
-            <p><span class="red">Age:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</p>
+            <p><span class="red">Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;Alexandre</p>
+            <p><span class="red">Age:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21</p>
             <p><span class="red">Job:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student</p>
         </div>
 
-        <p class="command"><span class="green">lindwen@deb-vps~$</span> ls -la</p>
+        <p class="command"><span class="green">lindwen@deb:~$</span> ls -lah</p>
         <div class="result">
-            <p>drwxr-xr-x 23 root root 4096 juin 17 14:27 .</p>
-            <p>drwxr-xr-x 23 root root 4096 juin 17 14:27 ..</p>
-            <p>drwxr-xr-x 2 root root 4096 juin 12 14:56 bin</p>
-            <p>drwxr-xr-x 4 root root 4096 juin 12 15:47 home</p>
-            <p>drwxr-xr-x 2 root root 4096 déc. 28 15:30 <a href="/contact">contact</a></p>
-            <p>drwxr-xr-x 2 root root 4096 déc. 28 15:30 <a href="/contact">projects</a></p>
-            <p>drwxr-xr-x 13 root root 4096 juin 12 15:37 var</p>
+            <p>drwxr-xr-x 1 lindwen lindwen 4.0K juin 17 14:27 .</p>
+            <p>drwxr-xr-x 6 lindwen lindwen 4.0K juin 17 14:27 ..</p>
+            <p>drwxr-xr-x 4 lindwen lindwen 4.0K juin 12 15:47 knowledges</p>
+            <p>drwxr-xr-x 2 lindwen lindwen 4.0K déc. 28 15:30 <a href="/contact">contact</a></p>
+            <p>drwxr-xr-x 2 lindwen lindwen 4.0K déc. 28 15:30 <a href="/projects.html">projects</a></p>
         </div>
 
-        <p class="command"><span class="green">lindwen@deb-vps~$</span> cat /home/lindwen/webdev</p>
+        <p class="command"><span class="green">lindwen@deb:~$</span> cd knowledges/</p>
+
+        <p class="command"><span class="green">lindwen@deb:~/knowledges$</span> cat skills</p>
         <div class="result">
-            <p>Web: HTML, CSS, PHP, JS</p>
-            <p>PYTHON, C, JAVA, JS (NodeJS)</p>
+            <p style="font-weight: bold;">Programming languages:</p>
+            <p>HTML, CSS, PHP, JS, PYTHON, C, JAVA, JS (NodeJS)</p>
+            <p style="font-weight: bold;">Others :</p>
+            <p>VPN, PROXY, VIRTUALISATION, FIREWALL, DNS, ...</p>
         </div>
 
-        <p class="command"><span class="green">lindwen@deb-vps~$</span> cat /home/lindwen/sysadmin</p>
-        <div class="result">
-            <p>BTS SIO / LICENCE GENERALE INFORMATIQUE</p>
-            <p>VPN, PROXY, VIRTUALISATION, FIRE-WALL, DNS, ...</p>
-        </div>
+        <p class="command"><span class="green">lindwen@deb:~/knowledges$</span> sudo mysql -u root -p **********</p>
 
-        <p class="command"><span class="green">lindwen@deb-vps~$</span> sudo mysql -u root -p</p>
-
-        <p class="command"><span class="red">mysql></span> SELECT * FROM SOCIALS;</p>
+        <p class="command"><span class="red">mysql></span> use informations;</p>
+        <p class="command"><span class="red">mysql></span> SELECT * FROM socials;</p>
         <div class="result">
             <p>+----+---------+--------------------+<br> | id | Name&nbsp;&nbsp;&nbsp; | Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br> +----+---------+--------------------+
-                <br> | 1&nbsp; | github&nbsp; | <a href="https://github.com/Lindwen" style="color: #fff;">github.com/Lindwen</a> |<br> +----+---------+--------------------+
-                <br> | 2&nbsp; | gitlab&nbsp; | <a href="https://gitlab.com/Lindwen" style="color: #fca326;">gitlab.com/Lindwen</a> |<br> +----+---------+--------------------+
-                <br> | 3&nbsp; | twitter | <a href="https://twitter.com/lindw3n" style="color: #00aced;">twitter.com/lindw3n</a>| <br> +----+---------+--------------------+
-                <br> | 4&nbsp; | discord | <a href="" style="color: #5865F2;">lindwen#0519</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br> +----+---------+--------------------+
+                <br> | 1&nbsp; | github&nbsp; | <a href="https://github.com/Lindwen">github.com/Lindwen</a> |<br> +----+---------+--------------------+
+                <br> | 2&nbsp; | gitlab&nbsp; | <a href="https://gitlab.com/Lindwen">gitlab.com/Lindwen</a> |<br> +----+---------+--------------------+
+                <br> | 3&nbsp; | twitter | <a href="https://twitter.com/lindw3n">twitter.com/lindw3n</a>| <br> +----+---------+--------------------+
+                <br> | 4&nbsp; | discord | <a href="https://discordapp.com/users/199599741779050497">lindwen#0001</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br> +----+---------+--------------------+
                 <br> 4 rows in set (0.00 sec)</p>
         </div>
 
         <p class="command"><span class="red">mysql></span> exit</p>
 
-        <p class="command"><span class="green">lindwen@deb-vps~$</span> <span id="prompt">_</span></p>
+        <p class="command"><span class="green">lindwen@deb:~$</span> <span id="prompt">_</span></p>
 
     </div>
 

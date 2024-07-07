@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lindwen.fr</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- <link rel="icon" href="assets/img/favicon.ico" /> -->
+    <meta name="description" content="Lindwen website" />
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <script
+      defer
+      src="https://stats.lindwen.fr/script.js"
+      data-website-id="ec33bf17-80d0-466e-a121-3b39124d6410"
+    ></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <pre class="yellow">
+  _      _           _
+ | |    (_)         | |
+ | |     _ _ __   __| |_      _____ _ __
+ | |    | | '_ \ / _` \ \ /\ / / _ \ '_ \
+ | |____| | | | | (_| |\ V  V /  __/ | | |
+ |______|_|_| |_|\__,_| \_/\_/ \___|_| |_|
+        </pre
+      >
+
+      <p class="command"><span class="green">lindwen@deb:~$</span> whoami</p>
+      <div class="result">
+        <p><span class="red">Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;Alexandre</p>
+        <p><span class="red">Age:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23</p>
+        <p>
+          <span class="red">Job:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student
+        </p>
+      </div>
+
+      <p class="command"><span class="green">lindwen@deb:~$</span> ls -lah</p>
+      <div class="result">
+        <p>drwxr-xr-x 1 lindwen lindwen 4.0K juin 17 14:27 .</p>
+        <p>drwxr-xr-x 6 lindwen lindwen 4.0K juin 17 14:27 ..</p>
+        <p>drwxr-xr-x 4 lindwen lindwen 4.0K juin 12 15:47 knowledges</p>
+        <p>
+          drwxr-xr-x 2 lindwen lindwen 4.0K déc. 28 13:40
+          <a href="https://admin.lindwen.fr/">admin-only</a>
+        </p>
+        <p>drwxr-xr-x 2 lindwen lindwen 4.0K déc. 28 15:30 contact</p>
+        <p>drwxr-xr-x 2 lindwen lindwen 4.0K déc. 28 15:30 projects</p>
+      </div>
+
+      <p class="command">
+        <span class="green">lindwen@deb:~$</span> cd knowledges/
+      </p>
+
+      <p class="command">
+        <span class="green">lindwen@deb:~/knowledges$</span> head -n 4 skills
+      </p>
+      <div class="result">
+        <p style="font-weight: bold">Programming languages:</p>
+        <p>HTML, CSS, PHP, JS, PYTHON, C, JAVA, JS (NodeJS)</p>
+        <p style="font-weight: bold">Others :</p>
+        <p>VPN, PROXY, VIRTUALISATION, FIREWALL, DNS, ...</p>
+      </div>
+
+      <p class="command">
+        <span class="green">lindwen@deb:~/knowledges$</span> mysql -u root -p
+      </p>
+      <div class="result">
+        <p class="command">
+          Enter password: Konami<br /><br />
+          Welcome to the MariaDB monitor. Commands end with ; or \g.<br />
+          Your MariaDB connection id is 123<br />
+          Server version: 20.8.14-MariaDB Debian 12<br />
+          Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and
+          others.<br /><br />
+          Type 'help;' or '\h' for help. Type '\c' to clear the current input
+          statement.
+        </p>
+      </div>
+
+      <p class="command">
+        <span class="red">MariaDB [(none)]></span> use informations;
+      </p>
+      <p class="command">
+        <span class="red">MariaDB [informations]></span> SELECT * FROM socials;
+      </p>
+      <div class="result">
+        <p>
+          +----+---------+--------------------+<br />
+          | id | Name&nbsp;&nbsp;&nbsp; |
+          Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          |<br />
+          +----+---------+--------------------+ <br />
+          | 1&nbsp; | github&nbsp; |
+          <a href="https://github.com/Lindwen" style="color: #5eff33"
+            >github.com/Lindwen</a
+          >
+          |<br />
+          +----+---------+--------------------+
+          <br />
+          | 2&nbsp; | discord |
+          <a
+            href="https://discordapp.com/users/199599741779050497"
+            style="color: #5865f2"
+            >lindwen#0001</a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br />
+          +----+---------+--------------------+ <br />
+          4 rows in set (0.00 sec)
+        </p>
+      </div>
+
+      <p class="command">
+        <span class="red">MariaDB [informations]></span> exit
+      </p>
+
+      <p class="command">
+        <span class="green">lindwen@deb:~/knowledges$</span>
+        <span id="prompt">_</span>
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>
+        Made with 💜 by Lindwen |
+        <a href="https://github.com/Lindwen/lindwen-website-terminal"
+          >GitRepo</a
+        >
+      </p>
+    </div>
+
+    <script>
+      console.log(
+        "%cSTOP! ✋ This area is intended for developers.",
+        "font-size: 18px; font-weight: 700; color: red;"
+      );
+      const konamiCode = [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowLeft",
+        "ArrowRight",
+        "b",
+        "a",
+      ];
+
+      let konamiCodePosition = 0;
+
+      function checkKonamiCode(event) {
+        const key = event.key;
+
+        const requiredKey = konamiCode[konamiCodePosition];
+
+        if (key === requiredKey) {
+          konamiCodePosition++;
+
+          if (konamiCodePosition === konamiCode.length) {
+            alert("コナミコマンド");
+            window.open(
+              "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+              "_blank"
+            );
+
+            konamiCodePosition = 0;
+          }
+        } else {
+          konamiCodePosition = 0;
+        }
+      }
+
+      document.addEventListener("keydown", checkKonamiCode);
+    </script>
+  </body>
+</html>

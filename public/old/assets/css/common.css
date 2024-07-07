@@ -1,0 +1,112 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: 'CascadiaMono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(CascadiaMono.woff2) format('woff2');
+  font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'CascadiaMono';
+    background-color: #0c162d;
+}
+
+.main {
+    padding: 20px;
+}
+
+.command {
+    color: #fff;
+}
+
+.result {
+    padding-left: 20px;
+}
+
+.result p {
+    margin: 0;
+    color: #627597;
+}
+
+.result a {
+    color: #00a8ff;
+}
+
+.yellow {
+    color: #ea4aaa;
+    font-weight: 600; 
+    text-shadow:
+    0 0 7px #ea4aaa,
+    0 0 10px #ea4aaa,
+    0 0 21px #ea4aaa,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+}
+
+.green {
+    color: #00cfc8;
+}
+
+.red {
+    color: #ee4b5b;
+}
+
+a{
+    /*
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(rgb(46, 105, 255)), color-stop(24%, rgb(29, 93, 255)), color-stop(55.73%, rgb(91, 157, 255)), color-stop(75%, rgb(255, 116, 241)), to(rgb(255, 116, 241))) repeat scroll 0% 0% padding-box text;
+    background: rgba(0, 0, 0, 0) -o-linear-gradient(left, rgb(46, 105, 255) 0%, rgb(29, 93, 255) 24%, rgb(91, 157, 255) 55.73%, rgb(255, 116, 241) 75%, rgb(255, 116, 241) 100%) repeat scroll 0% 0% padding-box text;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(46, 105, 255) 0%, rgb(29, 93, 255) 24%, rgb(91, 157, 255) 55.73%, rgb(255, 116, 241) 75%, rgb(255, 116, 241) 100%) repeat scroll 0% 0% padding-box text;
+    -webkit-text-fill-color: transparent;
+    */
+    color: rgb(46, 105, 255);
+    text-decoration: underline;
+}
+
+a:hover {
+    animation:  shake 0.8s  ;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: #fff;
+}
+
+   @keyframes shake{
+     0%{
+       transform: translateX(0)
+     }
+     25%{
+       transform: translateX(25px);
+     }
+       
+     50%{
+       transform: translateX(-25px);
+     }
+     100%{
+       transform: translateX(0px);
+     }
+   }
+
+   #playPauseButton {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}

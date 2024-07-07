@@ -13,7 +13,6 @@ concurrency:
 
 jobs:
   deploy:
-    environment: prod
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,6 +25,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd docker/personal-website
+            cd docker/personnal-website
             git pull
             docker compose up -d

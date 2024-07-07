@@ -12,6 +12,12 @@ services:
     labels:
       #-- WatchTower --#
       - com.centurylinklabs.watchtower.enable=true
+      #-- HomePage --#
+      - homepage.group=Websites and Others
+      - homepage.name=Personal Website
+      - homepage.description=My personal website
+      - homepage.href=https://lindwen.fr
+      - homepage.siteMonitor=https://lindwen.fr
     networks:
       - proxy-net
 

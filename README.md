@@ -1,2 +1,0 @@
-# lindwen-website-terminal
-

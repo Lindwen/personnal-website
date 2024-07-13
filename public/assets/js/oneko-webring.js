@@ -17,10 +17,8 @@
 
   // please use data-neko="true" on your A elements that link to another site with oneko-webring.js instead of this
   // this is deprecated and will eventually be removed
-  const nekoSites = [
-    "localhost",
-  ];
-  
+  const nekoSites = ["localhost"];
+
   try {
     const searchParams = location.search
       .replace("?", "")
@@ -154,10 +152,10 @@
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = Number.MAX_VALUE;
 
-    let nekoFile = "assets/img/oneko.gif"
-    const curScript = document.currentScript
+    let nekoFile = "assets/img/oneko.gif";
+    const curScript = document.currentScript;
     if (curScript && curScript.dataset.cat) {
-      nekoFile = curScript.dataset.cat
+      nekoFile = curScript.dataset.cat;
     }
     nekoEl.style.backgroundImage = `url(${nekoFile})`;
 
@@ -182,8 +180,8 @@
       lastFrameTimestamp = timestamp;
     }
     if (timestamp - lastFrameTimestamp > 100) {
-      lastFrameTimestamp = timestamp
-      frame()
+      lastFrameTimestamp = timestamp;
+      frame();
     }
 
     window.requestAnimationFrame(onAnimationFrame);
@@ -254,8 +252,6 @@
     }
     idleAnimationFrame += 1;
   }
-
-  
 
   function frame() {
     frameCount += 1;

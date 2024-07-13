@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 console.log(
   "%cSTOP! ✋ This area is intended for developers.",
-  "font-size: 18px; font-weight: 700; color: red;"
+  "font-size: 18px; font-weight: 700; color: red;",
 );
 const konamiCode = [
   "ArrowUp",

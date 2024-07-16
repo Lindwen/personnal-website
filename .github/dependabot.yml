@@ -4,7 +4,17 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - lindwen
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - lindwen
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - lindwen

@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      bulma-timeline:
+        specifier: ^3.0.5
+        version: 3.0.5
     devDependencies:
       prettier:
         specifier: 3.3.3
@@ -14,11 +18,16 @@ importers:
 
 packages:
 
+  bulma-timeline@3.0.5:
+    resolution: {integrity: sha512-gBwdx7PmAEZ/+5zSn/ZBJBqkenT8wi+9nlD0uP8lXa3rGcbhG+fp8Oz98+3O10LQPlUEdKPYEUxtQ55okRfhTQ==}
+
   prettier@3.3.3:
     resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
 snapshots:
+
+  bulma-timeline@3.0.5: {}
 
   prettier@3.3.3: {}

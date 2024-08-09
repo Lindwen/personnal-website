@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "3.3.3"
+  },
+  "dependencies": {
+    "bulma-timeline": "^3.0.5"
   }
 }
